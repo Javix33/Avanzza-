@@ -204,7 +204,8 @@ footer {
 .cardText{
   font-family: sans-serif;
   font-size: 20px;
-  text-align: center;
+  text-align: justify;
+  margin-right: 2%;
 }
 .cardAction{
     margin-top: 10px;
