@@ -35,7 +35,7 @@ nav ul {
     padding: 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 nav ul li {
@@ -117,9 +117,9 @@ nav ul li a:focus {
     background-color: #256EDD;
     border-radius: 10px;
     border: none;
-    width: 90%;
-    padding: 20px;
-    margin: 5%;
+    width: 99.5%;
+    padding: 0.5px;
+    margin: 3px;
 
 }
 .certification-text{
@@ -170,91 +170,87 @@ footer {
 /*inicio servicios*/
 /*inicio cards*/
 .services{
-    font-family: sans-serif;
-    font-size: 30px;
-    color: #000;
-    text-align: center;
+  text-align: center;
 }
 .servicios{
-    width: 100%;
-    display: flex;
+  display: flex;
+  flex-wrap: wrap;
 }
-.container {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .card {
-    width: calc(33.33% - 20px); /* 3 cards por línea con espacio entre ellas */
-    height: auto;
-    margin: 10px;
-    border-radius: 5px;
-    overflow: hidden;
-    box-sizing: border-box; /* Incluye el padding y el border en el cálculo del ancho */
-    background-color: #6FA9E5;
+.card{
+  margin-left: 1%;
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1vw;
+  background-color: #6FA9E5;
+  padding-bottom: 1%;
+  color: #fff;
 }
-  
-  .card img {
-    width: 100px; /* Ancho de la imagen */
-    height: auto; /* Altura automática para mantener la proporción */
-    margin: 5px;
-    float: left;
-  }
-  
-  .card .content {
-    padding: 10px;
-    
-  }
-  
-  .card h3 {
-    margin-top: 0;
-    text-align: center;
-    color: #fff;
-  }
-  
-  .card p {
-    margin-bottom: 10px;
-    color: #fff;
-  }
-  
-  .card button.toggle-info {
-    display: block;
+.cardTittle{
+  font-family: sans-serif;
+  font-size: 25px;
+  text-align: center;
+}
+.cardContent{
+  display: flex;
+  align-items: center;
+}
+.cardImg{
+  width: 50%;
+  margin-right: 3%;
+ 
+}
+.cardText{
+  font-family: sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+.cardAction{
+    margin-top: 10px;
     background-color: #7ED957;
-    color: white;
+    color: #fff;
     border: none;
     padding: 5px 10px;
-    border-radius: 3px;
+    border-radius: 5px;
     cursor: pointer;
-    margin-left: 40%;
-  }
-  
-  .card .extra-info {
-    display: none;
-    padding: 10px;
-    color: #fff;
-  }
-  
-  /* Reinicia el margen derecho en el tercer elemento de cada fila */
-  .card:nth-child(3n + 3) {
-    margin-right: 0;
-  }
+}
+.additionalInfo {
+  display: block;
+  margin-top: 10px;
+}
+.hidden {
+  display: none;
+}
+.textExtra{
+  font-family: sans-serif;
+  font-size: 20px;
+  margin-left: 2%;
+  margin-right: 2%;
+}
   
 /*final cards*/
 /*final servicios*/
 /*inicio contacto*/
 /* Contacto */
 .contacto-container {
-    max-width: 500px;
+    width: 97%;
     margin: 50px auto;
     padding: 20px;
     background-color: #6FA9E5;
-    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-
+.contactTittle{
+  color: #fff;
+  text-align: center;
+}
 .contacto-container label {
     display: block;
     margin-bottom: 5px;
+    color: #fff;
 }
 
 .contacto-container input[type="text"],
@@ -264,8 +260,8 @@ footer {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    border: none;
-    border-radius: 5px;
+    
+    background-color: none;
     box-sizing: border-box;
 }
 
@@ -288,18 +284,38 @@ footer {
 }
 
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-textarea {
+input[type="text"]:not(:focus),
+input[type="email"]:not(:focus),
+input[type="tel"]:not(:focus),
+textarea:not(:focus) {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    border: none;
-    border-radius: 5px;
+    background-color: transparent;
+    border-bottom: #fff 1px solid;
+    border-top: none;
+    border-left: none;
+    border-right: #fff 1px solid;
     box-sizing: border-box;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+
+/* Estilos para cuando el elemento está enfocado */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: transparent;
+  border-bottom: #fff 1px solid;
+  border-top: none;
+  border-left: none;
+  border-right: #fff 1px solid;
+  box-sizing: border-box; 
+  outline: none;
+}
+
 
 textarea {
     resize: vertical;
@@ -318,4 +334,37 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #1b6ca8;
 }
+.contactContainer{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.contactInfo{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+}
+.infoDiv{
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.icon{
+  width: 5%;
+  height: auto;
+}
+.adressDetail{
+  margin-left: 3%;
+}
+.infoContactTittle{
+  font-family: sans-serif;
+  font-size: 25px;
+  color: #fff;
+  text-align: center;
+}
+.formContainer{
+  width: 40%;
+}
+
 /*final contacto*/

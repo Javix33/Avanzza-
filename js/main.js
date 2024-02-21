@@ -19,17 +19,19 @@ function showSlide(n) {
 // Cambiar de diapositiva cada 2 segundos
 setInterval(function() {
   changeSlide(1);
-}, 2000);
+}, 5000);
 
 //final banner  
 //inicio servicios
 //inicio cards
-const toggleButtons = document.querySelectorAll('.toggle-info');
-
-toggleButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    const extraInfo = button.nextElementSibling;
-    extraInfo.style.display = extraInfo.style.display === 'block' ? 'none' : 'block';
+document.addEventListener('DOMContentLoaded', function () {
+  var buttons = document.querySelectorAll('.cardAction');
+  buttons.forEach(function (button) {
+      button.addEventListener('click', function (event) {
+          var additionalInfo = this.nextElementSibling;
+          additionalInfo.classList.toggle('hidden'); // Alternar la clase 'hidden'
+          event.stopPropagation(); // Detener la propagación del evento para evitar conflictos
+      });
   });
 });
 //final cards

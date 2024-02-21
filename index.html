@@ -19,6 +19,10 @@
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100094103147975" target="_blank"><img src="./assets/icons/facebook.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/avanzza_soluciones_integrales?igsh=MXA4MzhjZndzNjh1cQ==" target="_blank"><img src="./assets/icons/instagram.png" alt="Instagram"></a>
+        </div>
         </header>
     <!--final header-->
     <!--inincio Inicio-->
@@ -77,97 +81,138 @@
     </h2>
     <section class="servicios" >
         <!--inicio cards-->
-        <div class="container">
-            <div class="card">
-                <img src="./assets/img/servicios/servicio_1.jpg" alt="Imagen 1">
-                <div class="content">
-                    <h3>Modalidad 40</h3>
-                    <p>Realizamos el proyecto de pensión a través de préstamos o PPRs (ahorro) para personas trabajadoras ley 73.</p>
-                    <button class="toggle-info">Más Información</button>
-                    <div class="extra-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore architecto dolorem distinctio cupiditate? Dolor, inventore sequi illum perferendis exercitationem voluptatum soluta quae numquam! Error nesciunt consectetur et quo voluptatibus ullam?</div>
+        <div class="card" id="card1">
+            
+            <div class="cardContent">
+                <img class="cardImg" src="./assets/img/servicios/servicio_1.jpg" alt="">
+                <div>
+                    <h3 class="cardTittle">Modalidad 40</h3>
+                    <p class="cardText">Realizamos el proyecto de pensión a través de préstamos o PPRs (ahorro) para personas trabajadoras ley 73.</p>
                 </div>
+                
             </div>
-            <div class="card">
-                <img src="./assets/img/servicios/servicio_2.jpg" alt="Imagen 1">
-                <div class="content">
-                    <h3>Crédito Infonavit</h3>
-                    <p>Te asesoramos para que puedas tener tu recurso para comprar una casa. </p>
-                    <button class="toggle-info">Más Información</button>
-                    <div class="extra-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, quidem? Eaque, ex illum earum sit sequi ducimus rerum? Facere asperiores quis nam velit ipsum eum accusamus itaque necessitatibus reiciendis ut.</div>
-                </div>
+            <button class="cardAction">Más información</button>
+            <div class="additionalInfo hidden" id="additionalInfo_card1">
+                <p class="textExtra">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore molestiae quaerat modi atque! Illum quo quisquam enim qui maxime. Voluptate vel quia provident itaque perferendis possimus laudantium vero, similique fuga!</p>
             </div>
-            <!-- Repite el código para las otras cards -->
-            <div class="card">
-                <img src="./assets/img/servicios/servicio_3.jpg" alt="Imagen 1">
-                <div class="content">
-                    <h3>Retiro de Infonavit</h3>
-                    <p>Realizamos el proceso para el retiro de tu capital de ahorro para la vivienda.</p>
-                    <button class="toggle-info">Más Información</button>
-                    <div class="extra-info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero excepturi obcaecati non, deleniti itaque aspernatur ipsum dolorum, quaerat numquam quod corrupti in quasi est. Beatae vero animi itaque quo nam.</div>
-                </div>
-            </div>
-            <!-- Repite el código para las otras cards -->
-            <div class="card">
-                <img src="./assets/img/servicios/servicio_4.jpg" alt="Imagen 1">
-                <div class="content">
-                    <h3>Seguros de vida</h3>
-                    <p>Protege a tu familia con una suma asegurada por fallecimiento. </p>
-                    <button class="toggle-info">Más Información</button>
-                    <div class="extra-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor omnis expedita aperiam aliquam, nostrum sed voluptatibus veritatis nobis dolorem eum quae autem optio minus blanditiis perspiciatis! Omnis consequatur dolorem consequuntur.</div>
-                </div>
-            </div>
-            <!-- Repite el código para las otras cards -->
-            <div class="card">
-                <img src="./assets/img/servicios/servicio_5.jpg" alt="Imagen 1">
-                <div class="content">
-                    <h3>Afore</h3>
-                    <p>Asesoría general de afore e IMSS, acompañamiento, traspasos y afiliaciones. </p>
-                    <button class="toggle-info">Más Información</button>
-                    <div class="extra-info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime at minus repellat, minima atque, similique est nobis omnis, eveniet quae quo? Facere error explicabo est earum omnis veritatis a sint?</div>
-                </div>
-            </div>
-            <!-- Repite el código para las otras cards -->
-            <div class="card">
-                <img src="./assets/img/servicios/servicio_6.jpg" alt="Imagen 1">
-                <div class="content">
-                    <h3>Préstamos a pensionados</h3>
-                    <p>Si ya te pensionaste y necesitas dinero te ayudamos a sacar un crédito.</p>
-                    <button class="toggle-info">Más Información</button>
-                    <div class="extra-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est similique aperiam necessitatibus harum esse dignissimos, sunt fugiat voluptas, possimus fuga cumque optio. Iure maiores quam distinctio perferendis voluptas ad amet?</div>
-                </div>
-            </div>
-            <!-- Repite el código para las otras cards -->
-            <div class="card">
-                <img src="./assets/img/servicios/servicio_7.jpg" alt="Imagen 1">
-                <div class="content">
-                    <h3>Reducción de carga fiscal</h3>
-                    <p>Asesoría de declaración de impuestos según perfil personal.</p>
-                    <button class="toggle-info">Más Información</button>
-                    <div class="extra-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam excepturi, dolorem dolores reiciendis nihil corrupti odit quo eum atque incidunt. Incidunt velit delectus rem nam ipsam? Itaque aspernatur doloremque optio?</div>
-                </div>
-            </div>
-            <!-- Repite el código para las otras cards -->
-            <div class="card">
-                <img src="./assets/img/servicios/servicio_8.jpg" alt="Imagen 1">
-                <div class="content">
-                    <h3>PPR – (plan privado de retiro)</h3>
-                    <p>Fondo de inversión a largo plazo +10 años utilizado para pensión y/o proyectos de emprendimiento. Creamos ese capital para tener libertad financiera.</p>
-                    <button class="toggle-info">Más Información</button>
-                    <div class="extra-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum eius praesentium, quis consectetur quam ducimus officiis perspiciatis maiores qui deleniti quae odit culpa fuga explicabo, corrupti tempore odio amet recusandae.</div>
-                </div>
-            </div>
-            <!-- Repite el código para las otras cards -->
-            <div class="card">
-                <img src="./assets/img/servicios/servicio_9.jpg" alt="Imagen 1">
-                <div class="content">
-                    <h3>Seguros de auto</h3>
-                    <p>Todo tipo de coberturas para que vayas protegidos en tu viaje para todo tipo de necesidades.</p>
-                    <button class="toggle-info">Más Información</button>
-                    <div class="extra-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio perspiciatis odit officiis iure. Error repellat, tempore fugit aut libero ratione provident, alias sequi qui quo amet. Quod maiores labore soluta.</div>
-                </div>
-            </div>
-            <!-- Repite el código para las otras cards -->
         </div>
+        <div class="card" id="card2">
+            
+            <div class="cardContent">
+                <img class="cardImg" src="./assets/img/servicios/servicio_2.jpg" alt="">
+                <div>
+                    <h3 class="cardTittle">Crédito Infonavit</h3>
+                    <p class="cardText">Te asesoramos para que puedas tener tu recurso para comprar una casa. 
+                    </p>
+                </div>
+                
+            </div>
+            <button class="cardAction">Más información</button>
+            <div class="additionalInfo hidden" id="additionalInfo_card2">
+                <p class="textExtra">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore molestiae quaerat modi atque! Illum quo quisquam enim qui maxime. Voluptate vel quia provident itaque perferendis possimus laudantium vero, similique fuga!</p>
+            </div>
+        </div>
+        <div class="card" id="card3">
+            
+            <div class="cardContent">
+                <img class="cardImg" src="./assets/img/servicios/servicio_3.jpg" alt="">
+                <div>
+                    <h3 class="cardTittle">Retiro de Infonavit</h3>
+                    <p class="cardText">Realizamos el proceso para el retiro de tu capital de ahorro para la vivienda.</p>
+                </div>
+                
+            </div>
+            <button class="cardAction">Más información</button>
+            <div class="additionalInfo hidden" id="additionalInfo_card3">
+                <p class="textExtra">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore molestiae quaerat modi atque! Illum quo quisquam enim qui maxime. Voluptate vel quia provident itaque perferendis possimus laudantium vero, similique fuga!</p>
+            </div>
+        </div>
+        <div class="card" id="card4">
+            
+            <div class="cardContent">
+                <img class="cardImg" src="./assets/img/servicios/servicio_4.jpg" alt="">
+                <div>
+                    <h3 class="cardTittle">Seguros de vida</h3>
+                    <p class="cardText">Protege a tu familia con una suma asegurada por fallecimiento. </p>
+                </div>
+                
+            </div>
+            <button class="cardAction">Más información</button>
+            <div class="additionalInfo hidden" id="additionalInfo_card4">
+                <p class="textExtra">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore molestiae quaerat modi atque! Illum quo quisquam enim qui maxime. Voluptate vel quia provident itaque perferendis possimus laudantium vero, similique fuga!</p>
+            </div>
+        </div>
+        <div class="card" id="card5">
+            
+            <div class="cardContent">
+                <img class="cardImg" src="./assets/img/servicios/servicio_5.jpg" alt="">
+                <div>
+                    <h3 class="cardTittle">Afore</h3>
+                    <p class="cardText">Asesoría general de afore e IMSS, acompañamiento, traspasos y afiliaciones. </p>
+                </div>
+            </div>
+            <button class="cardAction">Más información</button>
+            <div class="additionalInfo hidden" id="additionalInfo_card5">
+                <p class="textExtra">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore molestiae quaerat modi atque! Illum quo quisquam enim qui maxime. Voluptate vel quia provident itaque perferendis possimus laudantium vero, similique fuga!</p>
+            </div>
+        </div>
+        <div class="card" id="card6">
+           
+            <div class="cardContent">
+                <img class="cardImg" src="./assets/img/servicios/servicio_6.jpg" alt="">
+                <div>
+                    <h3 class="cardTittle">Préstamos a pensionados</h3>
+                    <p class="cardText">Si ya te pensionaste y necesitas dinero te ayudamos a sacar un crédito.</p>
+                </div>
+            </div>
+            <button class="cardAction">Más información</button>
+            <div class="additionalInfo hidden" id="additionalInfo_card6">
+                <p class="textExtra">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore molestiae quaerat modi atque! Illum quo quisquam enim qui maxime. Voluptate vel quia provident itaque perferendis possimus laudantium vero, similique fuga!</p>
+            </div>
+        </div>
+        <div class="card" id="card7">
+            
+            <div class="cardContent">
+                <img class="cardImg" src="./assets/img/servicios/servicio_7.jpg" alt="">
+                <div>
+                    <h3 class="cardTittle">Reducción de carga fiscal</h3>
+                    <p class="cardText">Asesoría de declaración de impuestos según perfil personal.</p>
+                </div>
+            </div>
+            <button class="cardAction">Más información</button>
+            <div class="additionalInfo hidden" id="additionalInfo_card7">
+                <p class="textExtra">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore molestiae quaerat modi atque! Illum quo quisquam enim qui maxime. Voluptate vel quia provident itaque perferendis possimus laudantium vero, similique fuga!</p>
+            </div>
+        </div>
+        <div class="card" id="card8">
+            
+            <div class="cardContent">
+                <img class="cardImg" src="./assets/img/servicios/servicio_8.jpg" alt="">
+                <div>
+                    <h3 class="cardTittle">PPR – (plan privado de retiro)</h3>
+                    <p class="cardText">Fondo de inversión a largo plazo +10 años utilizado para pensión y/o proyectos de emprendimiento. Creamos ese capital para tener libertad financiera.</p>
+                </div>
+            </div>
+            <button class="cardAction">Más información</button>
+            <div class="additionalInfo hidden" id="additionalInfo_card8">
+                <p class="textExtra">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore molestiae quaerat modi atque! Illum quo quisquam enim qui maxime. Voluptate vel quia provident itaque perferendis possimus laudantium vero, similique fuga!</p>
+            </div>
+        </div>
+        <div class="card" id="card9">
+           
+            <div class="cardContent">
+                <img class="cardImg" src="./assets/img/servicios/servicio_9.jpg" alt="">
+                <div>
+                    <h3 class="cardTittle">Seguros de auto </h3>
+                    <p class="cardText">Todo tipo de coberturas para que vayas protegidos en tu viaje para todo tipo de necesidades.</p>
+                </div>
+            </div>
+            <button class="cardAction">Más información</button>
+            <div class="additionalInfo hidden" id="additionalInfo_card9">
+                <p class="textExtra">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore molestiae quaerat modi atque! Illum quo quisquam enim qui maxime. Voluptate vel quia provident itaque perferendis possimus laudantium vero, similique fuga!</p>
+            </div>
+        </div>
+        
         <!--final cards-->
     </section>
     <!--final servicios-->
@@ -175,20 +220,47 @@
     <!--final contacto-->
     <!--inicio contacto-->
     <div class="contacto-container" id="contacto">
-        <h2>Contacto</h2>
-        <form action="https://formspree.io/f/xqkrppoe" method="POST">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="telefono">Teléfono:</label>
-            <input type="tel" id="telefono" name="telefono" required>
-            <label for="direccion">Dirección:</label>
-            <input type="text" id="direccion" name="direccion" required>
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje"></textarea>
-            <input type="submit" value="Enviar">
-        </form>
+        <h2 class="contactTittle">Contacto</h2>
+        <div class="contactContainer">
+            <div class="contactInfo">
+                <h3 class="infoContactTittle">
+                    Avanzza
+                </h3>
+                <div class="infoDiv">
+                    <img class="icon" src="./assets/icons/gps.png" alt="icono gps">
+                    <p class="adressDetail">
+                        Calle cto. Alamos 68, Alamos 2da sección , Querétaro, Mexico
+                    </p>
+                </div>
+                <div class="infoDiv">
+                    <img class="icon"  src="./assets/icons/llamada-telefonica.png" alt="icon phone">
+                    <p class="adressDetail">
+                        55 44 2475-2184
+                    </p>
+                </div>
+                <div class="infoDiv">
+                    <img class="icon"  src="./assets/icons/email.png" alt="iconMail">
+                    <p class="adressDetail">
+                        alvarez.martha@asesorpatrimonial.pro
+                    </p>
+                </div>
+            </div>
+            <div class="formContainer">
+                <form action="https://formspree.io/f/xqkrppoe" method="POST">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" id="direccion" name="direccion" required>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje"></textarea>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </div>
     </div>
     <!--final contacto-->
 <!--inicio footer-->
@@ -197,8 +269,8 @@
         <img src="./assets/img/logotipo (2).png" alt="Logo">
         </div>
         <div class="social-icons">
-        <a href="#" target="_blank"><img src="./assets/icons/facebook.png" alt="Facebook"></a>
-        <a href="#" target="_blank"><img src="./assets/icons/instagram.png" alt="Instagram"></a>
+        <a href="https://www.facebook.com/profile.php?id=100094103147975" target="_blank"><img src="./assets/icons/facebook.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/avanzza_soluciones_integrales?igsh=MXA4MzhjZndzNjh1cQ==" target="_blank"><img src="./assets/icons/instagram.png" alt="Instagram"></a>
         </div>
     </footer>
 <!--final footer-->
