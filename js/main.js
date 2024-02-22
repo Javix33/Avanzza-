@@ -37,5 +37,51 @@ document.addEventListener('DOMContentLoaded', function () {
 //final cards
 //final servicios
 //inicio menu
+// selector
+let menu = document.querySelector('.hamburger');
+
+// Método para alternar el menú
+function toggleMenu(event) {
+    console.log("Toggle menu function is triggered.");
+    menu.classList.toggle('is-active');
+    let navMenu = document.querySelector(".menuppal");
+    navMenu.classList.toggle("is_active");
+}
+
+// Evento para el menú hamburguesa
+menu.addEventListener('click', toggleMenu, false);
+
+// Escuchador de eventos al cargar el DOM
+document.addEventListener('DOMContentLoaded', function () {
+    console.log("DOMContentLoaded event is triggered.");
+
+    // Event listener para el clic en los enlaces del menú móvil
+    let mobileLinks = document.querySelectorAll('.mobile-menu a');
+    mobileLinks.forEach(function (link) {
+        link.addEventListener('click', function (event) {
+            // Cerramos el menú al hacer clic en un enlace del menú móvil
+            console.log("Mobile link clicked.");
+            toggleMenu(event);
+        });
+    });
+});
 
 //final menu
+//button back
+$(document).ready(function() {
+  // Show or hide the sticky footer button
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 200) {
+      $('.go-top').fadeIn(200);
+    } else {
+      $('.go-top').fadeOut(200);
+    }
+  });
+  
+  // Animate the scroll to top
+  $('.go-top').click(function(event) {
+    event.preventDefault();
+    
+    $('html, body').animate({scrollTop: 0}, 300);
+  })
+});

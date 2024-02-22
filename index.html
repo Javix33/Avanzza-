@@ -9,19 +9,38 @@
 <body>
     <!--inicio header-->
         <header>
-            <!--menu movil inicio-->
-            
-            <!--menu movil final-->
+           
         <div class="logo">
-            <img src="./assets/img/logotipo.png" alt="Logo">
+            <img src="./assets/img/logotipo (2).png" alt="Logo">
         </div>
-        <nav>
+        <nav class="main">
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#servicios">Servicios</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
+         <!--menu movil inicio-->
+            
+         <div class="hamburger">
+            <div class="_layer -top"></div>
+            <div class="_layer -mid"></div>
+            <div class="_layer -bottom"></div>
+        </div>
+        <nav class="menuppal mobile-menu">
+            <ul>
+              <li><a href="#inicio">Inicio</a></li>
+              <li><a href="#servicios">Servicios</a></li>
+              <li><a href="#contacto">Contacto</a></li>
+              
+            </ul>
+          </nav>
+
+
+
+
+        
+        <!--menu movil final-->
         <div class="social-icons">
             <a href="https://www.facebook.com/profile.php?id=100094103147975" target="_blank"><img src="./assets/icons/facebook.png" alt="Facebook"></a>
         <a href="https://www.instagram.com/avanzza_soluciones_integrales?igsh=MXA4MzhjZndzNjh1cQ==" target="_blank"><img src="./assets/icons/instagram.png" alt="Instagram"></a>
@@ -33,7 +52,7 @@
         <section class="carousel" id="inicio">
             <div class="carousel">
                 <div class="slide">
-                  <img src="./assets/img/Banners/1.png" alt="Imagen 1">
+                  <img src="./assets/img/Banners/1.webp" alt="Imagen 1">
                   <div class="carousel-caption">
                     <h4>¡Cuenta con nosotros! <br>
                         Tenemos 25 años de experiencia 
@@ -41,13 +60,13 @@
                   </div>
                 </div>
                 <div class="slide">
-                  <img src="./assets/img/Banners/2.png" alt="Imagen 2">
+                  <img src="./assets/img/Banners/2.webp" alt="Imagen 2">
                   <div class="carousel-caption">
                     <h4>Somos asesores certificados en áreas de negocio</h4>
                   </div>
                 </div>
                 <div class="slide">
-                  <img src="./assets/img/Banners/3.png" alt="Imagen 3">
+                  <img src="./assets/img/Banners/3.webp" alt="Imagen 3">
                   <div class="carousel-caption">
                     <h4>Hacemos su traje a la medida <br>
                         Nos adecuamos a las necesidades de cada cliente 
@@ -249,6 +268,7 @@
                 </div>
             </div>
             <div class="formContainer">
+                <h3 class="contactTittle2">Envianos un mensaje</h3>
                 <form action="https://formspree.io/f/xqkrppoe" method="POST">
                     <label for="nombre">Nombre:</label>
                     <input type="text" id="nombre" name="nombre" required>
@@ -269,16 +289,18 @@
 <!--inicio footer-->
     <footer>
         <div class="logo-footer">
-        <img src="./assets/img/logotipo (2).png" alt="Logo">
+        <img class="logo2" src="./assets/img/logotipo (2).png" alt="Logo">
         </div>
-        <div class="social-icons">
+        <div class="social-iconsF">
         <a href="https://www.facebook.com/profile.php?id=100094103147975" target="_blank"><img src="./assets/icons/facebook.png" alt="Facebook"></a>
         <a href="https://www.instagram.com/avanzza_soluciones_integrales?igsh=MXA4MzhjZndzNjh1cQ==" target="_blank"><img src="./assets/icons/instagram.png" alt="Instagram"></a>
         </div>
     </footer>
 <!--final footer-->
-
+<!--button back-->
+<a href="#" class="go-top"><img src="./assets/icons/flecha.png" alt="" class="up"></a>
 
 <script src="./js/main.js"></script>
+
 </body>
 </html>

@@ -25,11 +25,11 @@ header {
   vertical-align: middle;
 }
 
-nav {
+.main {
   width: 40%;
 }
 
-nav ul {
+.main ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -38,23 +38,23 @@ nav ul {
   justify-content: space-around;
 }
 
-nav ul li {
+.main ul li {
   margin-left: 20px;
 }
 
-nav ul li:first-child {
+.main ul li:first-child {
   margin-left: 0;
 }
 
-nav ul li a {
+.main ul li a {
   text-decoration: none;
   color: #333;
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
-nav ul li a:hover,
-nav ul li a:focus {
+.main ul li a:hover,
+.main ul li a:focus {
   color: #256EDD;
 }
 /* Estilos para el menú hamburguesa */
@@ -161,6 +161,21 @@ footer {
     height: auto;
   }
   
+  .social-iconsF {
+    display: flex;
+  }
+  
+  .social-iconsF a {
+    margin-left: 10px;
+    display: inline-block;
+  }
+  
+  .social-iconsF img {
+    width: 30px; /* Ajusta el tamaño de los iconos según tus necesidades */
+    height: 30px;
+  }
+
+
   .social-icons {
     display: flex;
   }
@@ -378,3 +393,233 @@ input[type="submit"]:hover {
 }
 
 /*final contacto*/
+.contactTittle2{
+  color: #fff;
+  text-align: center;
+  display: none;
+}
+/*mobile*****************/
+/*menu mobile*/
+.hamburger{
+	display: none;
+  background-color:transparent;
+	left:0;
+	top:0;
+	height:30px;
+	width:30px;
+	padding:20px 20px;
+	-webkit-transform:translate3d(0, 0, 0);
+	transform:translate3d(0, 0, 0);
+	-webkit-transition:-webkit-transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+	transition:transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+	z-index:1002;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none
+}
+.hamburger.is-active{
+  background-color:none;
+}
+._layer{
+	background:#256EDD;
+	margin-bottom:4px;
+	border-radius:2px;
+	width:30px;
+	height:4px;
+	opacity:1;
+	-webkit-transform:translate3d(0, 0, 0);
+	transform:translate3d(0, 0, 0);
+	-webkit-transition:all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+	transition:all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+}
+.hamburger:hover .-top{
+	-webkit-transform:translateY(-100%);
+	-ms-transform:translateY(-100%);
+	transform:translateY(-100%);
+}
+.hamburger:hover .-bottom{
+	-webkit-transform:translateY(50%);
+	-ms-transform:translateY(100%);
+	transform:translateY(100%);
+	}
+.hamburger.is-active .-top{
+	-webkit-transform:translateY(200%) rotate(45deg) !important;
+	-ms-transform:translateY(200%) rotate(45deg) !important;
+	transform:translateY(200%) rotate(45deg) !important;
+}
+.hamburger.is-active .-mid{
+	opacity:0;
+}
+.hamburger.is-active .-bottom{
+	-webkit-transform:translateY(-200%) rotate(135deg) !important;
+	-ms-transform:translateY(-200%) rotate(135deg) !important;
+	transform:translateY(-200%) rotate(135deg) !important;
+}
+
+.menuppal.is_active{
+  transform: translate3d(0px, 0px, 0px);
+}
+.menuppal{
+   background-color: rgba(255, 255, 255, 0.95);
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    overflow-y: scroll;
+    position: fixed;
+    top: 0;
+    transform: translate3d(0px, -100%, 0px);
+    transition: transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98) 0s;
+    width: 100%;
+    z-index: 1001;
+}
+.menuppal ul{
+  margin:0;padding:0;
+}
+.menuppal ul li { 
+  list-style: none;
+	text-align:center;
+	font-family: sans-serif;
+	font-size:1.5rem;
+	line-height:7em;
+	height:3em;
+  
+	text-transform:none;
+	font-weight:bold;
+}
+.menuppal ul li a{
+  text-decoration:none;
+  color: #256EDD;
+  position: relative;
+  z-index: 999;
+}
+.menuppal ul li a:hover{
+  text-decoration:none;
+  color:#333;
+}
+@media (max-width: 768px) {
+  /* Estilos que se aplicarán solo en pantallas con ancho menor a 768px */
+  /* Por ejemplo: */
+  .main{
+    display: none;
+  }
+  .social-icons{
+    display: none;
+  }
+  footer{
+    width: 100%;
+    display: flex;
+    padding-right: 0;
+    justify-content: space-around;
+  }
+  .logo-footer{
+    width: 30%;
+  }
+  .social-iconsF {
+    display: flex;
+  }
+  
+  .social-iconsF a {
+    margin-left: 10px;
+    display: inline-block;
+  }
+  
+  .social-iconsF img {
+    width: 20px; /* Ajusta el tamaño de los iconos según tus necesidades */
+    height: 20px;
+  }
+  .logo2{
+    width: 100%;
+  }
+  .contactContainer{
+    flex-direction: column;
+  }
+  input[type="text"]:not(:focus), input[type="email"]:not(:focus), input[type="tel"]:not(:focus), textarea:not(:focus){
+    height: 15px;
+  }
+  input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+  height: 15px;
+}
+.contacto-container label {
+  font-size: 10px;
+}
+.adressDetail{
+  font-size: 12px;
+}
+.icon{
+  width: 10%;
+}
+.infoDiv{
+  flex-direction: column;
+}
+.contactTittle2{
+  display: block;
+}
+.cardContent{
+  width: 100%;
+}
+.servicios{
+  flex-direction: column;
+}
+.card{
+  width: 100%;
+  margin: 0;
+  margin-bottom: 1%;
+}
+.cardTittle{
+  font-size: 20px;
+  margin-right: 10%;
+}
+.cardText{
+  font-size: 12px;
+  margin-right: 10%;
+}
+.textExtra{
+  font-size: 12px;
+}
+.certification-text{
+  font-size: 20px;
+}
+.certification{
+  width: auto;
+}
+.init-text{
+  font-size: 20px;
+  text-align: left;
+}
+.tittle{
+  font-size: 15px;
+}
+.carousel-caption h4 {
+  font-size: 10px;
+}
+.carousel-caption{
+  width: 75%;
+  bottom: 10px;
+  padding: 3px;
+  
+  border-radius: 4px;
+}
+.logo img{
+  width: 80%;
+}
+.hamburger{
+  display: block;
+}
+}
+/*button back*/
+.go-top {
+	position: fixed;
+	bottom: 2em;
+	right: 3em;
+	
+  
+	
+}
+.up{
+  width: 25px;
+}
