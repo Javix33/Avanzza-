@@ -86,8 +86,7 @@ header {
   
   .slide img {
     width: 100%;
-    height: fit-content;
-    object-fit:scale-down; /* Esto ajustará la imagen manteniendo su relación de aspecto y cubriendo completamente el contenedor */
+    
   }
   
   .carousel-caption {
