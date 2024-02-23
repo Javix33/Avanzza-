@@ -207,33 +207,43 @@ footer {
   flex-direction: column;
   align-items: center;
   margin-top: 1vw;
-  background-color: #6FA9E5;
+  
   padding-bottom: 1%;
   color: #fff;
+}
+.infoContainer {
+  background-color: #6FA9E5;
+  height: 100%;
+  padding-left: 3%;
+  padding-right: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 .cardTittle{
   font-family: sans-serif;
   font-size: 25px;
   text-align: center;
+  margin-bottom: -2%;
 }
 .cardContent{
   display: flex;
-  align-items: center;
+  
 }
 .cardImg{
   width: 50%;
-  margin-right: 3%;
+  align-self: flex-start;
  
 }
 .cardText{
   font-family: sans-serif;
   font-size: 20px;
-  text-align: justify;
+  text-align: left;
   margin-right: 2%;
 }
 .cardAction{
-    margin-top: 10px;
-    background-color: #7ED957;
+   background-color: #7ED957;
     color: #fff;
     border: none;
     padding: 5px 10px;
@@ -252,6 +262,7 @@ footer {
   font-size: 20px;
   margin-left: 2%;
   margin-right: 2%;
+  text-align: left;
 }
   
 /*final cards*/
@@ -569,14 +580,21 @@ textarea:focus {
   width: 100%;
   margin: 0;
   margin-bottom: 1%;
+  background-color: #6FA9E5;
+}
+.infoContainer{
+  align-items: flex-start;
 }
 .cardTittle{
   font-size: 20px;
-  margin-right: 10%;
+  
 }
 .cardText{
   font-size: 12px;
-  margin-right: 10%;
+  
+}
+.cardAction{
+  margin-bottom: 2%;
 }
 .textExtra{
   font-size: 12px;
