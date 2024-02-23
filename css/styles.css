@@ -647,6 +647,9 @@ textarea:focus {
 .banner-desktop{
   display: none;
 }
+body{
+  background-position:top;
+}
 }
 /*button back*/
 .go-top {
