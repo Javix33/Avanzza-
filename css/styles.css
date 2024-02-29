@@ -218,7 +218,8 @@ color: #256EDD;
   font-family: sans-serif;
   font-size: 25px;
   text-align: center;
-  margin-bottom: -2%;
+  margin-bottom: -4%;
+  margin-top: 0;
 }
 
 .cardContent{
@@ -228,6 +229,7 @@ color: #256EDD;
 
 .cardImg{
   width: 50%;
+  height: 100%;
   align-self: flex-start;
 }
 
